@@ -5,17 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
 <body>
-   
+    <article class="about">
+        <!-- btn container -->
+        <div class="btn-container">
+            <button class="tab-btn active" data-id="LONDON">LONDON</button>
+            <button class="tab-btn" data-id="PARIS">PARIS</button>
+            <button class="tab-btn" data-id="TOKYO">TOKYO</button>
+        </div>
+        <div class="about-content">
+
+            <div class="content active" id="LONDON">
+                <h4>LONDON</h4>
+                <p>
+                    Hi LONDON
+                </p>
+            </div>
+
+            <div class="content" id="PARIS">
+                <h4>PARIS</h4>
+                <p>
+                    HI PARIS
+                </p>
+
+            </div>
+
+            <div class="content" id="TOKYO">
+                <h4>TOKYO</h4>
+                <p>
+                    HI TOKYO
+                </p>
+            </div>
+
+        </div>
+    </article>
+    <script src="js/js.js"></script>
 </body>
 
 </html>

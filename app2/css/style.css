@@ -14,8 +14,40 @@
     padding-right: 15px;
 }
 
+body{
+    background-color: #cff;
+}
+
+article{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.btn-container {
+    display: flex;
+    background-color: #ccc;
+    width: 500px;
+}
+
+.tab-btn{
+    all: unset;
+    padding: 20px 0;
+    cursor: pointer;
+    width: 100%;
+}
 
 
+.tab-btn.active {
+    background-color: white;
+}
+
+.content {
+    display: none;
+}
+
+.content.active{
+    display: block;
+}
 
 /********************************/
 /********************************/
