@@ -5,7 +5,9 @@ let btnRemoveAll = document.querySelector(".remove")
 let list = document.querySelector("ul")
 let listLi = document.querySelectorAll("ul li")
 
-let data = [
+// let data = []
+//or use 
+data = [
     {
         id: 1,
         course: "HTML"
@@ -21,16 +23,22 @@ let data = [
 ]
 
 
+
+
 addEventListener("DOMContentLoaded", function () {
     showList(data)
+    remove()
 })
 
 function showList(data) {
+    //show item
     data.length ?
         list.innerHTML = data.map((item) => {
             return `<li data-id="${item.id}"><span>${item.course}</span><button>remove</button></li>`
         }).join("")
         : list.innerHTML = "<li>there are no item</li>"
+
+    //remove item
     remove()
 }
 
@@ -47,7 +55,6 @@ btnAdd.addEventListener("click", function (e) {
 
 })
 
-
 function remove() {
     list.querySelectorAll("li").forEach(item => {
         item.addEventListener("click", function () {
@@ -59,5 +66,6 @@ function remove() {
 
 
 btnRemoveAll.addEventListener("click", _ => {
-    showList("")
+    data = []
+    showList(data)
 })
