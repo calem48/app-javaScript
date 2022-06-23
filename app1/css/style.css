@@ -12,10 +12,50 @@
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    width: 400px !important;
 }
 
+main button{
+    padding: 5px 5px;
+}
 
+body{
+    height: 100vh;
+}
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+}
+form input{
+    outline: none;
+}
+
+form input:first-child{
+    width: 250px;
+    padding: 9px 3px;
+}
+
+form input:last-child{
+    padding: 0px 18px;
+}
+
+ul{
+    padding: 20px 0;
+}
+
+ul li {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
 
 /********************************/
 /********************************/
