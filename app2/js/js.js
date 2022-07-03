@@ -5,8 +5,7 @@ let content = document.querySelectorAll(".content")
 
 btns.forEach(item => {
     item.addEventListener("click", (e) => {
-        let id = e.target.dataset.id
-        if (id) {
+        if (e.target.dataset.id) {
             btns.forEach(item => {
                 item.classList.remove("active")
                 e.target.classList.add("active")
@@ -21,3 +20,4 @@ btns.forEach(item => {
         }
     })
 })
+
