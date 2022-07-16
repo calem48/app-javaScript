@@ -1,65 +1,61 @@
-*{
+*,
+::after,
+::before {
     margin: 0;
     padding: 0;
-    font-family: 'Work Sans', sans-serif;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+}
+
+body {
+    background: #eaecef;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    row-gap: 20px;
+}
+
+.container .box {
+    background-color: white;
+    width: 450px;
+    padding: 0 20px;
+    overflow: hidden;
+
 }
 
 
-.container{
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+.container .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
 }
 
-
-
-
-/********************************/
-/********************************/
-
-
-
-/********************************/
-/********************************/
-
-
-
-
-
-/********************************/
-/********************************/
-
-
-
-/********************************/
-/********************************/
-
-
-
-/********************************/
-/********************************/
-
-@media(max-width:767px){
-
+.container .question button {
+    padding: 0px 4px;
 }
 
-@media(min-width:768px){
-    .container{
-        width: 750px;
-    }
+.container .answer {
+    /* height: 0;
+  visibility: hidden;
+  opacity: 0;
+  */
+    display: none;
+
+    transition: 0.9s;
 }
 
-@media(min-width:992px){
-    .container{
-        width: 970px;
-    }
-}
+.container .box.active .answer {
+    display: block;
+    /* visibility: visible;
+  opacity: 1;
+  transition: 0.4s;
+  height: 90px; */
 
-@media(min-width:1200px){
-    .container{
-        width: 1170px;
-    }
+    transition: 0.9s;
 }
