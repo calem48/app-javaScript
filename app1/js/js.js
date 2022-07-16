@@ -1,33 +1,33 @@
-// let btnAdd = document.querySelector("form input:last-child")
-// let input = document.querySelector("form input:first-child")
-// let btnRemoveAll = document.querySelector(".remove")
-// let list = document.querySelector("ul")
+let btnAdd = document.querySelector("form input:last-child")
+let input = document.querySelector("form input:first-child")
+let btnRemoveAll = document.querySelector(".remove")
+let list = document.querySelector("ul")
 
-// btnAdd.addEventListener("click", function (e) {
-//     e.preventDefault()
-//     if (input.value) {
-//         showList(input.value)
-//     } else {
-//         alert("can't add empty value")
-//     }
-//     input.value = ""
-// })
-// list.addEventListener("click", function (e) {
-//     e.target.parentNode.dataset.id
-//     if (e.target.parentNode.dataset.id) {
-//         e.target.parentNode.remove()
-//     }
-// })
-
-
-// function showList(data) {
-//     list.innerHTML += `<li data-id="${data}"><span>${data}</span><button>remove</button></li>`
-// }
+btnAdd.addEventListener("click", function (e) {
+    e.preventDefault()
+    if (input.value) {
+        showList(input.value)
+    } else {
+        alert("can't add empty value")
+    }
+    input.value = ""
+})
+list.addEventListener("click", function (e) {
+    e.target.parentNode.dataset.id
+    if (e.target.parentNode.dataset.id) {
+        e.target.parentNode.remove()
+    }
+})
 
 
-// btnRemoveAll.addEventListener("click", function () {
-//     list.innerHTML = ""
-// })
+function showList(data) {
+    list.innerHTML += `<li data-id="${data}"><span>${data}</span><button>remove</button></li>`
+}
+
+
+btnRemoveAll.addEventListener("click", function () {
+    list.innerHTML = ""
+})
 
 // //or use
 // data = [
